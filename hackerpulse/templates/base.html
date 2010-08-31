@@ -10,8 +10,8 @@
       <div id="user-nav" class="right">Login | About</div>
       <div id="logo"><b>Hacker</b>Pulse</div>
     </div>
+    {% block container %}
     <div id="container">
-      {% block container %}
       <div id="center" class="column">
         {% block center_column %}{% endblock %}
       </div>
@@ -21,8 +21,8 @@
       <div id="right" class="column">
         {% block right_column %}{% endblock %}
       </div>
-      {% endblock %}
     </div>
-    <div id="footer"></div>
+    {% endblock %}
+    <div id="footer">I am in the footer</div>
   </body>
 </html>

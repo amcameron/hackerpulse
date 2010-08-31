@@ -1,5 +1,25 @@
 {% extends "base.html" %}
 
-{% block container %}
-<p>User Pulse</p>
+{% block left_column %}
+left
+{% endblock %}
+
+{% block center_column %}
+<div id="name">{{username}}</div>
+<div id="bio">{{bio}}</div>
+<div id="feed">
+  <div id="feed_title">My Pulse</div>
+  <ul id="feed_list">
+    {% for beat in pulse_feed %}
+    <li class="source-{{beat.source}}">
+      {{ beat.text|safe }}
+    </li>
+    {% endfor %}
+  </ul>
+  <div id="feed_more">more...</div>
+</div>
+{% endblock %}
+
+{% block right_column %}
+right
 {% endblock %}
