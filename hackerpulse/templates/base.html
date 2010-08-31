@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HackerPulse</title>
+    <link rel="stylesheet" href="/static/style.css" type="text/css" media="screen">
+    {% block extra_style %}{% endblock %}
+  </head>
+  <body>
+    <div id="header">
+      <div id="user-nav" class="right">Login | About</div>
+      <div id="logo"><b>Hacker</b>Pulse</div>
+    </div>
+    <div id="container">
+      {% block container %}
+      <div id="center" class="column">
+        {% block center_column %}{% endblock %}
+      </div>
+      <div id="left" class="column">
+        {% block left_column %}{% endblock %}
+      </div>
+      <div id="right" class="column">
+        {% block right_column %}{% endblock %}
+      </div>
+      {% endblock %}
+    </div>
+    <div id="footer"></div>
+  </body>
+</html>
