@@ -1,0 +1,408 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	padding: 0;
+	margin: 0;
+	font-family: serif;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+fieldset,img { 
+	border: 0;
+	}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+	}
+ol,ul {
+	list-style: none;
+	}
+caption,th {
+	text-align: left;
+	}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	font-size: 100%;
+	}
+q:before,q:after {
+	content:'';
+	}
+abbr,acronym { border: 0;
+	}
+
+body {
+	min-width: 855px;      /* 2x LC width + RC width */
+	width: 960px;
+	margin: 0 auto;
+	background: #fcfcfc;
+	color: #333333;
+}
+#container {
+	padding-left: 265px;   /* LC width */
+	padding-right: 305px;  /* RC width */
+}
+
+#single {
+	float:left;
+	width:100%;
+	min-height: 800px;
+}
+
+#container .column {
+	position: relative;
+	float: left;
+	min-height: 800px;
+}
+#center {
+	width: 100%;
+	text-align:justify;
+}
+#left {
+	width: 265px;          /* LC width */
+	right: 265px;          /* LC width */
+	margin-left: -100%;
+}
+#right {
+	width: 305x;          /* RC width */
+	margin-right: -305px;  /* RC width */
+}
+#footer {
+	clear: both;
+}
+
+#header {
+	float:left;
+	width:100%;
+	padding-bottom: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+}
+
+#logo {
+	float:left;
+	font-size:200%;
+}
+
+#logo b {
+	color:#821122;
+}
+
+a {
+	color:#821122;
+}
+
+#login_pane {
+	float:right;
+	padding-top:16px;
+}
+
+#gravatar img {
+	margin: 0 auto;
+	display: block;
+	padding-top: 35px;
+	padding-bottom: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+}
+
+ul {
+	list-style: none;
+}
+
+#contacts h1 {
+	font-size:14px;
+	text-align:center;
+}
+
+#contact_buttons li {
+	font-size:18px;
+	min-height: 32px;
+}
+
+#contact_buttons a {
+	display: block;
+	line-height:18px;
+	text-decoration: none;
+	font-weight:400;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+#contact_buttons span {
+	padding-left: 90px;
+}
+
+.twitter {
+	background-image: url("http://twitter-badges.s3.amazonaws.com/t_small-b.png");
+	background-repeat: no-repeat;
+	background-position: 60px 5px;
+}
+
+.github {
+	background-image: url("github_button.png");
+	background-repeat: no-repeat;
+	background-position: 60px 5px;
+}
+
+.stackoverflow {
+	background-image: url("stackoverflow_button.png");
+	background-repeat: no-repeat;
+	background-position: 60px 5px;
+}
+
+#feed_more {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#name {
+	padding-top: 35px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+}
+
+#name h1 {
+	font-size:200%;
+}
+
+#bio {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	font-size:80%;
+}
+
+#feed_title h2 {
+	padding-top: 5px;
+	padding-bottom: 10px;
+	font-size:120%;
+	text-align: center;
+}
+
+#projects {
+	width:285px;
+	padding-left:20px;
+}
+
+#projects_title h2 {
+	width:285px;
+	padding-left:20px;
+	padding-top: 140px;
+	padding-bottom: 10px;
+	font-size:120%;
+	text-align: center;
+}
+
+#feed_list li {
+	padding:10px 0;
+	font-size:80%;
+}
+
+#projects_list li {
+	margin: 10px 0px 10px 25px;;
+}
+
+h3 a{
+	color:#821122;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.project_title {
+	padding-left:5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	font-size:120%;
+}
+
+.project_title h3{
+	padding-bottom: 2px;
+}
+
+.project_content {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	border-top-width: 0px;
+}
+
+.description {
+	padding-left:5px;
+	padding-right: 5px;
+	font-size: 80%;
+	text-align:justify;
+}
+
+.updated_at {
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right: 5px;
+	text-align:right;
+	font-size:60%;
+	color:#cccccc;
+}
+
+a {
+	text-decoration:none;
+	font-weight:bold;
+}
+
+.gh a {
+	color:#000000;
+}
+
+.hn a {
+	color:#ff6600;
+}
+
+.rd a {
+	color:#336699;
+}
+
+.misc a {
+	color:#821122;
+}
+
+#top {
+	padding-bottom: 10px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+}
+
+#top h2 {
+	padding:15px 0;
+	font-size:175%;
+	text-align:center;
+	color:#821122;
+	font-weight:bold;
+}
+
+#bottom h2 {
+	padding:5px 0;
+	font-size:175%;
+	text-align:center;
+	color:#821122;
+	font-weight:bold;
+}
+
+#bottom h3 {
+	padding-top:5px;
+	padding-bottom:10px;
+	font-size:125%;
+	text-align:center;
+}
+
+#acct_details {
+	width:725px;
+	float:left;
+	text-align:right;
+}
+
+.acct_input {
+	float:right;
+	padding-bottom: 10px;
+	font-size: 30px;
+}
+.acct_input input{
+	font-size:120%;
+	width:490px;
+	height:60px;
+}
+
+.mini_input {
+	float:right;
+	padding-bottom: 10px;
+	padding-right:15px;
+	font-size: 30px;
+}
+.mini_input input{
+	font-size:70%;
+	width:140px;
+	height:30px;
+}
+
+.mini_field {
+	font-size:130%;
+	float:right;
+	padding-right: 5px;
+	padding-top: 3px;
+	text-align:center;
+}
+
+#acct_details p {
+	width:800px;
+	font-size:50%;
+	text-align:left;
+}
+
+.acct_field {
+	font-size:200%;
+	float:right;
+	padding: 10px 10px 10px 0;
+	text-align:center;
+}
+
+#optional {
+	font-size:200%;
+	float:left;
+	margin-top:-30px;
+	padding-left:155px;
+}
+
+#notes {
+	float:left;
+	width:235px;
+	font-size:75%;
+	text-align:center;
+}
+
+#notes p {
+	padding-top:85px;
+	font-style:italic;
+}
+
+.feed_column {
+	width:30%;
+	float:left;
+	text-align:center;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	margin: 0 1.5%;
+}
+
+.feed_column p {
+	font-size:120%;
+	color:#821122;
+	font-weight:bold;
+	padding-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #cccccc;
+	margin-bottom: 10px;
+}
+
+#save_button {
+	padding-top:20px;
+	float:right;
+}
+
+#save_button input {
+	height: 40px;
+	width: 100px;
+	background: #333333;
+	color: #fcfcfc;
+	font-weight: bold;
+	font-size:150%;
+	border-style:none;
+}
+
+#save_button input:hover{
+	background: #821122;
+}
