@@ -3,3 +3,13 @@ hackerpulse - painless portfolios for hackers
 let the hacker community know what you've been up to lately, no-hassle
 feeds pull in your recent activity automatically so you are free to 
 work on your projects, not waste time talking about them!
+
+sound cool?
+we are in #hackerpulse on freenode if you want to help
+
+i'm in! what can i do?
+hopefully we will have a mini-feature list and some tasks broken-down
+in the next day or two. until then feel free to toss up snippets, prototypes,
+or ideas into the repo or IRC
+
+the current 'stack' is Flask and mongoDB (subject to change)
