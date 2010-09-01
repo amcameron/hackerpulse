@@ -7,10 +7,10 @@ from urllib2 import urlopen
 class BaseFeedItem(object):
     """ Base class for each 'feed item' that we parse. """
 
-    def __init__(self):
-        self.timestamp = None
-        self.title = None
-        self.link = None
+    def __init__(self, timestamp=None, title=None, link=None):
+        self.timestamp = timestamp
+        self.title = title
+        self.link = link
 
     def get_data(self):
         """ Return the timestamp, title, and link """
