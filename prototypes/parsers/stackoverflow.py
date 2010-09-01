@@ -29,8 +29,8 @@ def run(user_id):
     gzipped_data = req_open.open(request).read()
 
     #build a buffer to decompress into
-    buffer = StringIO.StringIO(gzipped_data)
-    gzipper = gzip.GzipFile(fileobj=buffer)
+    buff = StringIO.StringIO(gzipped_data)
+    gzipper = gzip.GzipFile(fileobj=buff)
 
     #a dictionary of the data
     return json.loads(gzipper.read())
