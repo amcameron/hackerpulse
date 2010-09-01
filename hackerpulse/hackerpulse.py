@@ -5,7 +5,19 @@ app = Flask(__name__)
 def index():
     return render_template('base.html')
 
-@app.route('/<username>')
+@app.route('/login/')
+def login():
+    return "login page goes here"
+
+def create_or_login():
+    """login handler for OpenID, either let them make an account or redirect"""
+    return "create an account or be redirected"
+
+@app.route('/create/'):
+def create_account():
+    return "form to enter feeds, etc"
+
+@app.route('/<username>/')
 def user_pulse(username):
     context = {
         'username': username,
@@ -22,6 +34,32 @@ personal site or where you work. It's really up to you!""",
         }
     
     return render_template('user_pulse.html', **context)
+
+
+@app.template_filter()
+def timesince(dt, default="just now"):
+    """
+    Returns string representing "time since" e.g.
+    3 days ago, 5 hours ago etc.
+    """
+    now = datetime.now()
+    diff = now - dt
+
+    periods = (
+        (diff.days / 365, "year", "years"),
+        (diff.days / 30, "month", "months"),
+        (diff.days / 7, "week", "weeks"),
+        (diff.days, "day", "days"),
+        (diff.seconds / 3600, "hour", "hours"),
+        (diff.seconds / 60, "minute", "minutes"),
+        (diff.seconds, "second", "seconds"),
+    )
+
+    for period, singular, plural in periods:
+        if period:
+            return "%d %s ago" % (period, singular if period == 1 else plural)
+    return default
+
 
 if '__main__' == __name__:
     app.run()
