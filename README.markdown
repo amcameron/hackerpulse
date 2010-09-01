@@ -5,8 +5,8 @@ Let the hacker community know what you have been up to lately without
 the hassle.
 
 HackerPulse aggregates your public programming-related activities into a unique portfolio that 
-represents your online *pulse*. It makes it easy for you and others to see what projects you are
-working on or what you are reading about.
+represents your online *pulse*. It makes it easy to see what projects you are
+working on or what you are reading and commenting about.
 
 Spend less time posting about what you're doing and more time actually doing it.
 
