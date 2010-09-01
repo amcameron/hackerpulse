@@ -1,6 +1,8 @@
 """ A collection of parsers to grab items from web services. """
 
 from datetime import datetime
+import json
+from urllib2 import urlopen
 
 class BaseFeedItem(object):
     """ Base class for each 'feed item' that we parse. """
@@ -36,5 +38,15 @@ class RedditParser(BaseParser):
 		raise NotImplementedError
 
 class GitHubParser(BaseParser):
+	api_url = "http://github.com/api/v2/json/"
 	def run(self):
+		# From what I can tell, we can't find "recent activity"
+		# for a GitHub user using the API (json or otherwise).
+		# However, we can get it by scraping their syndication
+		# feed at http://github.com/username.atom
+		# In the meanwhile, some pretty (useless) json stuff.
+		#TODO scrape a syndication feed.
+		response = urlopen(''.join(api_url, 'user/show/',
+			self.username)).read()
+		user_info = json.loads(response)
 		raise NotImplementedError
