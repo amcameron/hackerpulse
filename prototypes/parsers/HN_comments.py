@@ -1,7 +1,6 @@
 import httplib2
 from BeautifulSoup import BeautifulSoup
 
-
 def HN_comments(username):
 """
 Basic prototype for pulling comments off of HN. Needs some more features still, mainly timestamps, but should provide a decent base for a Hacker News class. Pulling submissions should be pretty similar.
@@ -34,7 +33,7 @@ Basic prototype for pulling comments off of HN. Needs some more features still, 
 
     return all_comments
 
-username = 'chunkbot'
+username = ''
 all_comments = HN_comments(username)
 for comment in all_comments:
     print comment
